@@ -1,0 +1,25 @@
+.popular {
+
+  &__container {
+    padding-top: var(--big-offset);
+  }
+
+  &__list {
+  }
+
+  &__item {
+
+    grid-column: 4 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+
+    @include mobile {
+      grid-column: 12 span;
+    }
+  }
+}
+
+
+

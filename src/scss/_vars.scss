@@ -1,0 +1,72 @@
+@import 'mixins';
+
+:root {
+
+  // container settings
+  --container-indent: 15px;
+
+  // Colors
+  --color-black: #000;
+  --color-white: #fff;
+  --color-grey: #ededed;
+  --color-main: #ffc355;
+  --color-main-hover: #f0b850;
+  --color-logo-hover-1: #ffa500;
+  --color-logo-hover-2: #ff7a00;
+  --color-text: #282728;
+  --color-footer: #121113;
+  --color-background: #f7f7f7;
+  --color-header: rgb(252, 252, 252);
+
+  // offset, gap
+
+  // --grid-gap: 20px;
+  // --main-offset: 30px;
+  // --main-offset: 40px;
+  // --medium-offset: 30px;
+  // --second-offset: 20px;
+  // --small-offset: 10px;
+
+  --grid-gap: 2rem;
+  --big-offset: 60px;
+  --main-offset: 3.5rem;
+  --medium-offset: 3rem;
+  --second-offset: 2rem;
+  --small-offset: 1rem;
+
+  // fonts
+
+  --font-family: "Montserrat", sans-serif;
+  --medium-font: 500 14px / 140% var(--font-family);
+  --text-font: 500 16px / 140% var(--font-family);
+  --home-font: 500 18px / 140% var(--font-family);
+  --regular-font: 400 12px / 140% var(--font-family);
+  --bold-font: 700 1.4rem / 140% var(--font-family);
+  --order-font: 700 2rem / 140% var(--font-family);
+  --title-font: 700 48px / 140% var(--font-family);
+  --section-title-font: 700 34px / 140% var(--font-family);
+  //burger
+
+  --bar-width: 35px;
+  --bar-height: 4px;
+  --bar-spacing: 10px;
+}
+
+@include tablet {
+
+  :root {
+    --medium-font: 400 12px / 140% var(--font-family);
+    --home-font: 500 16px / 140% var(--font-family);
+    --title-font: 700 40px / 140% var(--font-family);
+    --section-title-font: 700 30px / 140% var(--font-family);
+  }
+}
+
+@include mobile {
+
+  :root {
+    --text-font: 500 14px / 140% var(--font-family);
+    --title-font: 700 34px / 140% var(--font-family);
+    --section-title-font: 700 26px / 140% var(--font-family);
+  }
+}

@@ -1,0 +1,72 @@
+@import '../mixins';
+
+.product-box {
+
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 .4rem .6rem rgba($color: #000000, $alpha: .2);
+  transition: box-shadow 0.3s ease-in-out 0s;
+  border: .1rem solid rgba($color: #000000, $alpha: .15);
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 24rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__nutrition {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in-out 0s;
+  }
+
+  &__price {
+    background-color: var(--color-main);
+    color: var(--color-white);
+    font: var(--text-font);
+    position: absolute;
+    padding: .5rem .8rem;
+    border-radius: .7rem;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  &__title {
+    font: var(--bold-font);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: .7rem .7rem;
+    width: 50%;
+  }
+
+
+  &:hover &__nutrition {
+    transform: translateY(0);
+  }
+
+  @include desktop {
+    &:hover {
+      box-shadow: 0 .4rem .3rem rgba($color: #000000, $alpha: .3);
+    }
+  }
+}

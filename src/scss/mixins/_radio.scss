@@ -1,0 +1,56 @@
+@mixin custom-radio {
+  position: relative;
+
+  &__field {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__content {
+    padding-left: 25px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #000;
+      width: 16px;
+      height: 16px;
+      box-sizing: border-box;
+      border-radius: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      background-color: blue;
+      background-position: center;
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
+.custom-radio__field:checked + .custom-radio__content::after {
+  opacity: 1;
+}
+
+.custom-radio__field:focus + .custom-radio__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px;
+}
+
+.custom-radio__field:disabled + .custom-radio__content {
+  opacity: 0.4;
+  pointer-events: none;
+}

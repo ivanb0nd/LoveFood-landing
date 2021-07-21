@@ -1,0 +1,94 @@
+<section class="order page-section" id="order">
+  <div class ="container order__container">
+    <h2 class="order__title section-title">Сделать<span class="yellow-text"> заказ </span></h2>
+
+    <div class="order__content">
+      <div class="order__delivery-form">
+
+        <div class="order__form">
+          <form class="delivery-form" action="#" id="delivery-form">
+
+            <div class="delivery-form__input-row">
+
+              <div class="delivery-form__input-container">
+                <input class="delivery-form__input" id="name" type="text" name="name" placeholder=" ">
+                <label class="delivery-form__label" for="name">Имя</label>
+              </div>
+
+              <div class="delivery-form__input-container">
+                <input class="delivery-form__input" id="phone" type="text" name="phone" maxlength="20" placeholder=" ">
+                <label class="delivery-form__label" for="phone">Телефон</label>
+              </div>
+
+            </div>
+
+            <div class="delivery-form__textarea-container">
+              <textarea class="delivery-form__textarea" id="address" name="address" cols="30" rows="10" placeholder=" "></textarea>
+              <label class="delivery-form__label delivery-form__label--textarea " for="address">Ваш адрес</label>
+            </div>
+          </form>
+        </div>
+
+        <div class="order__text">
+          <p>
+            Доставка по&nbsp;г.Барнаулу осуществляется в&nbsp;течение 60&nbsp;минут.
+          </p>
+          <p>
+            Доставка в&nbsp;отдаленные районы осуществляется в&nbsp;течение 90&nbsp;минут.
+          </p>
+          <p>
+            Оплата производится курьеру наличными или по&nbsp;терминалу.
+          </p>
+          <p>
+            После оформления заказа наш оператор свяжется с&nbsp;вами для уточнения заказа.
+          </p>
+        </div>
+      </div>
+
+      <div class="order-info">
+        <div class="order-info__head">Ваш заказ</div>
+        <div class="order-info__list">
+          <div class="order-info__item order-item">
+            <div class="order-item__img">
+              <img src="../img/product-card/burger-2.jpg" alt="Бургер Биг кинг XXL">
+            </div>
+            <div class="order-item__text">Бургер "Биг кинг XXL"</div>
+            <div class="order-item__counter">
+              <button class="counter-btn counter-btn--minus" data-direction='minus' type="button"></button>
+              <input class="quantity-input counter-value" type="text" value="1">
+              <button class="counter-btn counter-btn--plus" data-direction='plus' type="button"></button>
+            </div>
+            <div class="order-item__price">
+              <span>499 Р</span>
+              <span class="order-item__delete">Удалить</span>
+            </div>
+          </div>
+
+          <div class="order-info__item order-item">
+            <div class="order-item__img">
+              <img src="../img/product-card/dessert-2.jpg" alt="Творожный тортик">
+            </div>
+            <div class="order-item__text">Творожный тортик</div>
+            <div class="order-item__counter">
+              <button class="counter-btn counter-btn--minus" data-direction='minus' type="button"></button>
+              <input class="quantity-input counter-value" type="text" value="2">
+              <button class="counter-btn counter-btn--plus" data-direction='plus' type="button"></button>
+            </div>
+            <div class="order-item__price">
+              <span>239 Р</span>
+              <span class="order-item__delete">Удалить</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-info__fullprice" data-fullprice="233">
+          <span>Сумма: </span>
+          <span class="yellow-text">977 Р</span>
+        </div>
+        <div class="order-info__footer">
+          <button class="order-info__btn">Заказать</button>
+          <span class="order-info__prompt">Бесплатная доставка от 700 руб.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
