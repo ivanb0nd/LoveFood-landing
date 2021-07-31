@@ -255,3 +255,17 @@ h6 {
     top: -120%;
   }
 }
+
+::-webkit-scrollbar {
+  width: .8rem;
+  background-color: rgb(231, 231, 231);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-main);
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: var(--color-logo-hover-1);
+  }
+}

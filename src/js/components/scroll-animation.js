@@ -16,8 +16,10 @@ sr.reveal(`.footer__icon, .footer__copy`, {
   origin: 'bottom',
   distance: '20px',
   duration: 2000,
-  interval: 100,
+  interval: 0,
 });
+
+
 
 sr.reveal(`.order__content`, {
   distance: '0px',
